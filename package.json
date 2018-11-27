@@ -1,0 +1,29 @@
+{
+  "name": "bootcamp-weekly-scoring",
+  "version": "0.1.0",
+  "description": "Bootcamp Weekly Scoring Express React App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server/bin/www",
+    "server": "npm run start --prefix server",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "heroku-postbuild": "npm run build"
+  },
+  "author": "Rafael Sorto",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "nodemon": "^1.18.7",
+    "prettier": "^1.15.2"
+  },
+  "dependencies": {}
+}
